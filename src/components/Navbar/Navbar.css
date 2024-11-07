@@ -17,3 +17,7 @@ nav>div:nth-child(1) {
     justify-content: center;
     align-items: center;
 }
+
+#navbar-logo:hover {
+    cursor: pointer;
+}

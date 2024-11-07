@@ -34,7 +34,9 @@ export const Section1 = () => {
                         <img src={MessageBox} alt="Message Box Image" />
                     </div>
                     <p>
-                        Unlimited talk <br /> and text globally
+                        Chat lookups
+                        <br />
+                        made easier
                     </p>
                 </div>
                 <div>
@@ -42,7 +44,9 @@ export const Section1 = () => {
                         <img src={Globe} alt="Globe Image" />
                     </div>
                     <p>
-                        Unlimited data <br /> in 150+ countries
+                        Supports major
+                        <br />
+                        social media platforms
                     </p>
                 </div>
                 <div>
@@ -51,7 +55,8 @@ export const Section1 = () => {
                     </div>
                     <p>
                         Cancel
-                        <br /> anytime
+                        <br />
+                        anytime
                     </p>
                 </div>
             </div>
