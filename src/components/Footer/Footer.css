@@ -1,0 +1,14 @@
+footer {
+    position: absolute;
+    width: 100vw;
+    height: 84vh;
+    color: white;
+    background-color: black;
+    z-index: -1;
+}
+
+footer>div:nth-child(2)>p {
+    font-size: 18rem;
+    font-weight: 600;
+    text-align: center;
+}

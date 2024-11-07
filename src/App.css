@@ -3,3 +3,9 @@
   margin: 0 auto;
   text-align: center;
 }
+
+main {
+  position: relative;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
