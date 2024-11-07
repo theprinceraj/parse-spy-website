@@ -1,0 +1,10 @@
+.signup-btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--signup-btn-bg-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 24px;
+    cursor: pointer;
+}
