@@ -1,0 +1,121 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    padding: 2.5rem 0;
+}
+
+.floating-box {
+    position: relative;
+    background-color: var(--primary-bg-color);
+    margin: 1rem 2rem;
+    margin-top: 0;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.floating-box:hover {
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+}
+
+.section-heading {
+    padding: 2rem 0;
+    padding-top: .5rem;
+}
+
+.section-heading>div>span {
+    font-size: 4.5rem;
+    display: block;
+    font-family: "Merriweather Regular";
+}
+
+.section-content {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.section-content>div>span {
+    display: block;
+    color: gray;
+}
+
+.section-gallery {
+    width: 100vw;
+    position: relative;
+}
+
+#hero-section-bg {
+    width: 55%;
+}
+
+#demo-home-page-ss,
+#demo-main-page-ss {
+    position: absolute;
+    width: 40rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    top: 25%;
+}
+
+#demo-main-page-ss {
+    transform: rotate(-3deg);
+    left: 15%;
+    z-index: 50;
+}
+
+#demo-home-page-ss {
+    transform: rotate(8deg);
+    right: 15%;
+    z-index: 100;
+}
+
+.additional-cards {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+}
+
+.additional-cards>div {
+    width: 26%;
+}
+
+.additional-cards>div>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: var(--primary-bg-color);
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+.additional-cards img {
+    max-width: 35px;
+}
+
+.additional-cards p {
+    margin: auto;
+    font-size: 1.65rem;
+    font-family: "Merriweather Regular";
+    padding: 1rem 0;
+}
+
+.additional-note {
+    color: gray;
+    margin: 2rem 0;
+}
