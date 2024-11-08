@@ -1,7 +1,9 @@
 footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
     width: 100vw;
-    height: 82vh;
+    height: var(--footer-height);
     color: white;
     background-color: black;
     overflow: hidden;
@@ -70,4 +72,11 @@ footer {
     font-weight: 600;
     text-align: center;
     transform: translateY(5px);
+}
+
+@media (max-width: 480px) {
+    #footer-second-section>p{
+        font-size: 4.5rem;
+        transform: translateY(30px);
+    }
 }
