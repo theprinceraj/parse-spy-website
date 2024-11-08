@@ -1,14 +1,73 @@
 footer {
-    position: absolute;
+    position: relative;
     width: 100vw;
-    height: 84vh;
+    height: 82vh;
     color: white;
     background-color: black;
-    z-index: -1;
+    overflow: hidden;
 }
 
-footer>div:nth-child(2)>p {
-    font-size: 18rem;
+#footer-first-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+#footer-first-section>div {
+    width: 30%;
+}
+
+#footer-first-section>div:nth-child(1)>img {
+    width: 40px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+#footer-first-section a {
+    text-decoration: none;
+    color: inherit;
+    transition: all ease 0.2s;
+}
+
+#footer-first-section a:hover,
+#footer-first-section a:focus,
+#footer-first-section a:active {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer-first-section li {
+    list-style: none;
+    margin: 1rem 0;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-container p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.list-container>ul>li p {
+    color: gray;
+}
+
+
+#footer-second-section>p {
+    font-size: 17rem;
     font-weight: 600;
     text-align: center;
+    transform: translateY(5px);
 }

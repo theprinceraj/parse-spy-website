@@ -7,7 +7,6 @@ import Globe from "../../assets/globe.webp";
 import Calendar from "../../assets/calendar.webp";
 import { EmailSignupBox } from "../EmailSignupBox/EmailSignupBox";
 import { Section } from "../SectionTemplate/Section";
-
 export const Section1 = () => {
     return (
         <Section

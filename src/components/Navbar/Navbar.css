@@ -1,9 +1,5 @@
 nav {
     width: 100%;
-    padding: 10px 6rem;
-}
-
-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
