@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Messina Sans';
   src: local('Messina Sans Regular'), local('MessinaSans-Regular'),
-    url('MessinaSans-Regular.woff2') format('woff2'),
-    url('MessinaSans-Regular.woff') format('woff'),
-    url('MessinaSans-Regular.ttf') format('truetype');
+    url('./assets/MessinaSans-Regular.woff2') format('woff2'),
+    url('./assets/MessinaSans-Regular.woff') format('woff'),
+    url('./assets/MessinaSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -11,9 +11,9 @@
 @font-face {
   font-family: 'Messina Sans';
   src: local('Messina Sans SemiBold'), local('MessinaSans-SemiBold'),
-    url('MessinaSans-SemiBold.woff2') format('woff2'),
-    url('MessinaSans-SemiBold.woff') format('woff'),
-    url('MessinaSans-SemiBold.ttf') format('truetype');
+    url('./assets/MessinaSans-SemiBold.woff2') format('woff2'),
+    url('./assets/MessinaSans-SemiBold.woff') format('woff'),
+    url('./assets/MessinaSans-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
