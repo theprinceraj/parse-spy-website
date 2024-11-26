@@ -24,3 +24,22 @@
     ;
     transform: scale(1.03);
 }
+
+@media (max-width: 420px) {
+    .floating-box {
+        font-size: 0.7rem;
+        margin: 3rem 2rem;
+        margin-top: 0;
+        box-shadow: 0 2px 2px rgba(255, 192, 203, 0.2),
+            2px 8px 20px rgba(255, 0, 0, 0.2),
+            4px 12px 30px rgba(255, 255, 255, 0.2);
+        ;
+    }
+
+    .floating-box:hover {
+        cursor: default;
+        transform: none;
+    }
+
+
+}

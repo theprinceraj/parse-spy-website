@@ -16,3 +16,11 @@ form {
     border-radius: 2rem;
     background-color: white;
 }
+
+@media (max-width: 520px) {
+    #emailInput {
+        width: 14rem;
+        font-size: .9rem;
+    }
+
+}

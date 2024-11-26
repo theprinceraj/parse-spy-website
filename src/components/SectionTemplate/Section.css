@@ -28,3 +28,34 @@
     display: block;
     color: gray;
 }
+
+@media (max-width:700px) {
+    .section-heading>div>span {
+        font-size: 3.5rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:570px) {
+    .section-heading {
+        padding: 1rem 0;
+    }
+
+    .section-heading>div>span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:420px) {
+    .section-heading>div>span {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: .8rem;
+        padding: .1rem 0;
+    }
+}

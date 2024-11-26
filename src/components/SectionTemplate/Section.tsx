@@ -5,11 +5,12 @@ type Props = React.PropsWithChildren<{
     floatingBoxText: string | null | undefined;
     heading: Array<string>;
     description: Array<string>;
+    specificCSS?: React.CSSProperties | undefined;
 }>;
 
-export const Section = ({ floatingBoxText, heading, description, children }: Props) => {
+export const Section = ({ floatingBoxText, heading, description, specificCSS, children }: Props) => {
     return (
-        <section className="section">
+        <section className="section" style={specificCSS}>
             <FloatingBox text={floatingBoxText} />
             <div className="section-heading">
                 <div>

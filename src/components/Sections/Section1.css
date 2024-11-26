@@ -31,7 +31,7 @@
 .additional-cards {
     width: 100vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 2rem;
@@ -74,4 +74,128 @@
 .additional-note {
     color: gray;
     margin: 2rem 0;
+}
+
+@media (max-width: 1200px) {
+    .section-gallery {
+        margin: 4rem 0;
+    }
+
+    #hero-section-bg {
+        width: 60%;
+    }
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 35rem;
+        top: 22%;
+    }
+
+    #demo-main-page-ss {
+        left: 10%;
+    }
+
+    #demo-home-page-ss {
+        right: 10%;
+        top: 24%;
+    }
+}
+
+@media (max-width:995px) {
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 30rem;
+    }
+
+    .additional-cards p {
+        font-size: 1.39rem;
+    }
+}
+
+@media (max-width:800px) {
+
+    #hero-section-bg {
+        width: 70%;
+    }
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 25rem;
+    }
+
+    .additional-cards p {
+        font-size: 1.29rem;
+    }
+}
+
+@media (max-width:700px) {
+
+    #hero-section-bg {
+        width: 80%;
+    }
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 23rem;
+    }
+
+    .additional-cards>div {
+        width: 20%;
+    }
+
+    .additional-cards p {
+        font-size: 1rem;
+    }
+
+    .additional-note {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 20rem;
+    }
+}
+
+@media (max-width:520px) {
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 17rem;
+        border-radius: 7px;
+    }
+
+    .additional-cards {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .additional-cards>div {
+        width: 80%;
+    }
+
+    .additional-cards p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:450px) {
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 15rem;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width:420px) {
+
+    #demo-home-page-ss,
+    #demo-main-page-ss {
+        width: 14rem;
+    }
 }

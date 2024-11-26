@@ -30,6 +30,14 @@ nav>div:nth-child(1) {
     nav {
         padding: 0 1rem;
     }
+
+    #menuSearchIcon {
+        width: 50px;
+    }
+
+    #parseSpyIcon {
+        width: 110px;
+    }
 }
 
 @media (max-width:400px) {

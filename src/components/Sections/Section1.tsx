@@ -7,12 +7,18 @@ import Globe from "../../assets/globe.webp";
 import Calendar from "../../assets/calendar.webp";
 import { EmailSignupBox } from "../EmailSignupBox/EmailSignupBox";
 import { Section } from "../SectionTemplate/Section";
+
+const section1CSS = {
+    padding: "9rem 0",
+};
+
 export const Section1 = () => {
     return (
         <Section
             floatingBoxText="Heyo! We launched our Beta!"
             heading={["Quicker investigations.", "No hassle."]}
-            description={["Enjoy unlimited investigation reports for just $12/week.", "No hidden fees, or headaches."]}>
+            description={["Enjoy unlimited investigation reports for just $12/week.", "No hidden fees, or headaches."]}
+            specificCSS={section1CSS}>
             <EmailSignupBox />
             <div className="section-gallery">
                 <img src={HeroSectionBG} alt="Hero Section Background" id="hero-section-bg" />
