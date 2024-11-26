@@ -7,18 +7,31 @@ import Globe from "../../assets/globe.webp";
 import Calendar from "../../assets/calendar.webp";
 import { EmailSignupBox } from "../EmailSignupBox/EmailSignupBox";
 import { Section } from "../SectionTemplate/Section";
+import { useEffect, useState } from "react";
 
 const section1CSS = {
     padding: "9rem 0",
 };
 
 export const Section1 = () => {
+    const [_800pxMediaQuery, set_800pxMediaQuery] = useState(false);
+    useEffect(() => {
+        const mediaQueryList = window.matchMedia("(max-width:800px");
+        set_800pxMediaQuery(mediaQueryList.matches);
+        const handleResize = (e: MediaQueryListEvent) => {
+            set_800pxMediaQuery(e.matches);
+        };
+        mediaQueryList.addEventListener("change", handleResize);
+        return () => {
+            mediaQueryList.removeEventListener("change", handleResize);
+        };
+    }, []);
     return (
         <Section
             floatingBoxText="Heyo! We launched our Beta!"
             heading={["Quicker investigations.", "No hassle."]}
             description={["Enjoy unlimited investigation reports for just $12/week.", "No hidden fees, or headaches."]}
-            specificCSS={section1CSS}>
+            specificCSS={_800pxMediaQuery ? section1CSS : undefined}>
             <EmailSignupBox />
             <div className="section-gallery">
                 <img src={HeroSectionBG} alt="Hero Section Background" id="hero-section-bg" />
