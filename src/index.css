@@ -26,7 +26,7 @@
 :root {
   --signup-btn-bg-color: #393737;
   --primary-bg-color: #f5f5f5;
-  --footer-height: 82vh;
+  --footer-height: 94vh;
 }
 
 * {
@@ -42,15 +42,23 @@ body {
   width: 100vw;
   overflow-x: hidden;
   position: relative;
-  background-color: black;
+  background-color: transparent;
 }
 
 body {
+  background-color: black;
+}
+html {
   margin-bottom: var(--footer-height);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   :root {
     --footer-height: 50vh;
+  }
+}
+@media (max-width: 430px) {
+  :root {
+    --footer-height: 60vh;
   }
 }

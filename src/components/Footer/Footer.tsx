@@ -8,7 +8,7 @@ export const Footer = () => {
                     <img src={ParseSpyLogo} alt="Parse Spy Logo" />
                 </div>
                 <div className="list-container">
-                    <p className="list-heading">The Creators</p>
+                    <h6 className="list-heading">The Creators</h6>
                     <ul>
                         <li>
                             <a href="http://github.com/theprinceraj" target="_blank" rel="noopener noreferrer">
@@ -28,7 +28,7 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div className="list-container">
-                    <p className="list-heading">The Tech Stack</p>
+                    <h6 className="list-heading">The Tech Stack</h6>
                     <ul>
                         <li>
                             <p>NodeJS</p>

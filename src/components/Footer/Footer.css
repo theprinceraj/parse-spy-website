@@ -1,6 +1,6 @@
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: -20vh;
     z-index: -1;
     width: 100vw;
     height: var(--footer-height);
@@ -18,7 +18,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     padding-top: 2rem;
     margin-top: 2rem;
 }
@@ -55,6 +55,12 @@ footer {
     justify-content: flex-start;
 }
 
+.list-container h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white
+}
+
 .list-container {
     display: flex;
     align-items: flex-start;
@@ -77,16 +83,19 @@ footer {
     font-size: 17rem;
     font-weight: 600;
     text-align: center;
-    transform: translateY(5px);
 }
 
-@media (max-width: 426px) {
-    #footer-second-section>p {
-        font-size: 7.5rem;
-        transform: translateY(50px);
+@media (max-width: 469px) {
+    footer {
+        bottom: -5vh;
     }
 
-    .list-container p {
+    #footer-second-section>p {
+        font-size: 7.5rem;
+    }
+
+    .list-container p,
+    .list-container h6 {
         font-size: 0.9rem;
     }
 

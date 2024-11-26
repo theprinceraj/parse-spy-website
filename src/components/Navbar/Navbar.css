@@ -17,3 +17,27 @@ nav>div:nth-child(1) {
 #navbar-logo:hover {
     cursor: pointer;
 }
+
+#menuSearchIcon {
+    width: 60px;
+}
+
+#parseSpyIcon {
+    width: 150px;
+}
+
+@media (max-width:478px) {
+    nav {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width:400px) {
+    #menuSearchIcon {
+        width: 40px;
+    }
+
+    #parseSpyIcon {
+        width: 100px;
+    }
+}
