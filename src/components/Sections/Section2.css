@@ -1,6 +1,69 @@
-.feature-cards {
+.features-grid {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 85vh;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+.features-card {
+    width: 30%;
+    height: 100%;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#features-card-1 {
+    background-color: #ebf6f2;
+}
+
+#features-card-2 {
+    background-color: #e9eff6;
+}
+
+#features-card-3 {
+    background-color: #f2eff5;
+}
+
+.feature-card-visual {
+    width: 55%;
+    height: 50%;
+    background-color: #f7f7f7;
+    margin: 1rem 0;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card-visual>div>h5 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.feature-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-card-heading {
+    font-family: 'Merriweather Regular';
+    font-weight: 100;
+    font-size: 1.9rem;
+    margin: 1rem 0;
+}
+
+
+.feature-card-description {
+    font-size: 1.1rem;
+    color: #888777;
 }
