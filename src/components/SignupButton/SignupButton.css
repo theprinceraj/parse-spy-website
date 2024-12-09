@@ -46,6 +46,12 @@
     transition: 1.2s;
 }
 
+.signup-btn>a {
+    text-decoration: none;
+    color: white;
+
+}
+
 @media (max-width:400px) {
     .signup-btn {
         width: 5rem;

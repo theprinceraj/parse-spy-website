@@ -1,8 +1,8 @@
 import "./SignupButton.css";
-export const SignupButton = () => {
+export const SignupButton = ({ withinEmailInputBox = false }: { withinEmailInputBox?: boolean }) => {
     return (
         <button type="submit" className="signup-btn">
-            Sign up
+            {withinEmailInputBox ? "Sign up" : <a href="#emailInput">Sign up</a>}
         </button>
     );
 };
