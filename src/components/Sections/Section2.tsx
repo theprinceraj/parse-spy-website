@@ -2,6 +2,7 @@ import "./Section2.css";
 import { Section } from "../SectionTemplate/Section";
 import CheckIconSVG from "../../assets/check-icon.svg";
 import qrCodeImg from "../../assets/qr-code.webp";
+import featureVisualImg from "../../assets/feature-visual-img.webp";
 export const Section2 = () => {
     return (
         <Section
@@ -13,7 +14,7 @@ export const Section2 = () => {
                     <div className="feature-card-visual">
                         <div>
                             <p>Monthly fee</p>
-                            <h5>$69</h5>
+                            <h5>$40</h5>
                             <h6>
                                 <span>
                                     <img src={CheckIconSVG} className="check-icon" alt="Check Icon" />
@@ -25,36 +26,42 @@ export const Section2 = () => {
                     <div className="feature-card-content">
                         <h6 className="feature-card-heading">Simple</h6>
                         <p className="feature-card-description">
-                            A predictable phone plan
+                            An easy-to-use investigation tool
                             <br />
-                            without costly roaming fees.
+                            without costly any hidden fees.
                         </p>
                     </div>
                 </div>
                 <div className="features-card" id="features-card-2">
                     <div className="feature-card-visual">
-                        <div className="qr-borders"></div>
-                        <div className="qr-borders"></div>
-                        <img src={qrCodeImg} alt="Parse Spy QR Code" />
-                        <div className="qr-borders"></div>
-                        <div className="qr-borders"></div>
+                        <div className="qr-code-container">
+                            <div className="qr-borders"></div>
+                            <div className="qr-borders"></div>
+                            <img src={qrCodeImg} alt="Parse Spy QR Code" />
+                            <div className="qr-borders"></div>
+                            <div className="qr-borders"></div>
+                            <div className="qr-code-highlight"></div>
+                        </div>
                     </div>
                     <div className="feature-card-content">
                         <h6 className="feature-card-heading">Fast & Easy</h6>
                         <p className="feature-card-description">
-                            Get started in minutes. Just scan a<br />
-                            QR code and you’re ready to go.
+                            Get started with a click
+                            <br />
+                            and we'll take care of the rest.
                         </p>
                     </div>
                 </div>
                 <div className="features-card" id="features-card-3">
-                    <div className="feature-card-visual"></div>
+                    <div className="feature-card-visual">
+                        <img src={featureVisualImg} alt="Feature Visual Image" />
+                    </div>
                     <div className="feature-card-content">
-                        <h6 className="feature-card-heading">Expat Friendly</h6>
+                        <h6 className="feature-card-heading">Security First</h6>
                         <p className="feature-card-description">
-                            No SSN or US bank needed.
+                            Safeguards keep your data private.
                             <br />
-                            Activate before arriving in the US.
+                            Prioritizing your peace of mind.
                         </p>
                     </div>
                 </div>
