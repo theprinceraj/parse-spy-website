@@ -1,17 +1,19 @@
 .features-grid {
     display: flex;
     align-items: center;
-    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
     width: 100vw;
     height: 85vh;
+    min-height: 500px;
     margin: 2rem 0;
     padding: 2rem 0;
 }
 
 .features-card {
     width: 30%;
+    min-width: 384px;
     height: 100%;
     border-radius: 12px;
     display: flex;
@@ -33,19 +35,77 @@
 }
 
 .feature-card-visual {
+    position: relative;
     width: 55%;
     height: 50%;
-    background-color: #f7f7f7;
+    background-color: white;
     margin: 1rem 0;
     border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .feature-card-visual>div>h5 {
     font-size: 4rem;
     font-weight: 600;
+}
+
+.feature-card-visual>img {
+    position: relative;
+    width: 85%;
+    opacity: .55;
+}
+
+.feature-card-visual>.qr-borders {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+}
+
+.feature-card-visual>.qr-borders:nth-child(1) {
+    border-top-left-radius: 14px;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    top: 0;
+    left: 0;
+}
+
+.feature-card-visual>.qr-borders:nth-child(2) {
+    border-top-right-radius: 14px;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    top: 0;
+    right: 0;
+}
+
+.feature-card-visual>.qr-borders:nth-child(4) {
+    border-bottom-left-radius: 14px;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    bottom: 0;
+    left: 0;
+}
+
+.feature-card-visual>.qr-borders:nth-child(5) {
+    border-bottom-right-radius: 14px;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    bottom: 0;
+    right: 0;
+}
+
+.feature-card-visual>div>h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: .1rem 0;
+    border-radius: 8px;
+    background-image: conic-gradient(from 180deg at 50% 50%, #ebf6f2 0deg, #e7f3e0 56.3deg, #e5eff8 118.8deg, #fef1d8 176.4deg, #f7f4fa 237.6deg, #f7dbe5 295.2deg, #ebf6f2 360deg);
+    font-size: .9rem;
 }
 
 .feature-card-content {

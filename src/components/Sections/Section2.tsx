@@ -1,6 +1,7 @@
 import "./Section2.css";
 import { Section } from "../SectionTemplate/Section";
 import CheckIconSVG from "../../assets/check-icon.svg";
+import qrCodeImg from "../../assets/qr-code.webp";
 export const Section2 = () => {
     return (
         <Section
@@ -31,7 +32,13 @@ export const Section2 = () => {
                     </div>
                 </div>
                 <div className="features-card" id="features-card-2">
-                    <div className="feature-card-visual"></div>
+                    <div className="feature-card-visual">
+                        <div className="qr-borders"></div>
+                        <div className="qr-borders"></div>
+                        <img src={qrCodeImg} alt="Parse Spy QR Code" />
+                        <div className="qr-borders"></div>
+                        <div className="qr-borders"></div>
+                    </div>
                     <div className="feature-card-content">
                         <h6 className="feature-card-heading">Fast & Easy</h6>
                         <p className="feature-card-description">
