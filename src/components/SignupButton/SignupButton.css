@@ -10,6 +10,9 @@
     background-color: var(--signup-btn-bg-color);
     width: 7.5rem;
     height: 3.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .signup-btn::before {
@@ -49,7 +52,35 @@
 .signup-btn>a {
     text-decoration: none;
     color: white;
+}
 
+.loader {
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background: gray;
+    position: absolute;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: white;
+    transform: rotate(0deg) translate(15px);
+    animation: rotate 1s ease infinite;
+}
+
+.loader:after {
+    animation-delay: 0.5s
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg) translate(15px)
+    }
 }
 
 @media (max-width:400px) {
