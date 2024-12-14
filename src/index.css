@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'Merriweather Regular';
-  src: url('Merriweather-Regular.ttf') format('truetype'), ;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url('./assets/Merriweather-Regular.ttf') format('truetype');
 }
 
 :root {
