@@ -1,0 +1,47 @@
+.features-card {
+    height: 80vh;
+    width: 30%;
+    min-width: 372px;
+    min-height: 436px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-card-visual {
+    width: 55%;
+    max-width: 200px;
+    height: 50%;
+    max-height: 200px;
+    background-color: white;
+    margin: 1rem 0;
+    padding: .5rem;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.feature-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-card-heading {
+    font-family: 'Merriweather Regular';
+    font-weight: 100;
+    font-size: 1.9rem;
+    margin: 1rem 0;
+}
+
+
+.feature-card-description {
+    font-size: 1.1rem;
+    color: #888777;
+}

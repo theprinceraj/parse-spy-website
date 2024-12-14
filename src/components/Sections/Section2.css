@@ -9,45 +9,6 @@
     padding: 2rem 0;
 }
 
-.features-card {
-    height: 80vh;
-    width: 30%;
-    min-width: 372px;
-    min-height: 436px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#features-card-1 {
-    background-color: #ebf6f2;
-}
-
-#features-card-2 {
-    background-color: #e9eff6;
-}
-
-#features-card-3 {
-    background-color: #f2eff5;
-}
-
-.feature-card-visual {
-    width: 55%;
-    max-width: 200px;
-    height: 50%;
-    max-height: 200px;
-    background-color: white;
-    margin: 1rem 0;
-    padding: .5rem;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
 .feature-card-visual>div>h5 {
     font-size: 4rem;
     font-weight: 600;
@@ -148,24 +109,4 @@
     border-radius: 8px;
     background-image: conic-gradient(from 180deg at 50% 50%, #ebf6f2 0deg, #e7f3e0 56.3deg, #e5eff8 118.8deg, #fef1d8 176.4deg, #f7f4fa 237.6deg, #f7dbe5 295.2deg, #ebf6f2 360deg);
     font-size: .9rem;
-}
-
-.feature-card-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.feature-card-heading {
-    font-family: 'Merriweather Regular';
-    font-weight: 100;
-    font-size: 1.9rem;
-    margin: 1rem 0;
-}
-
-
-.feature-card-description {
-    font-size: 1.1rem;
-    color: #888777;
 }
